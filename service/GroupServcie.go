@@ -1,7 +1,7 @@
 package service
 
 import (
-	"chat/Model"
+	"chat/mysql"
 	"chat/utils"
 )
 
@@ -12,7 +12,7 @@ type GroupService struct {
 }
 
 func (gs *GroupService) CreateGroup() (code int, groupid string) {
-	groupid = Model.CreateGroup(gs.GroupName, gs.CreateUserName, gs.Members)
+	groupid = mysql.CreateGroup(gs.GroupName, gs.CreateUserName, gs.Members)
 	if groupid == "" {
 		return utils.GROUP_CREATE_ERR, groupid
 	}
