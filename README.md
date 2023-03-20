@@ -31,8 +31,6 @@ web框架：Gin
 部署：Docker
 
 #### 项目目录
-
-C:.
 │  .gitignore
 │  docker-compose.yml
 │  go.mod
