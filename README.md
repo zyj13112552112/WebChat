@@ -29,3 +29,73 @@ web框架：Gin
 分布式架构：GRPC,Protobuf
 
 部署：Docker
+
+#### 项目目录
+
+C:.
+│  .gitignore
+│  docker-compose.yml
+│  go.mod
+│  go.sum
+│  LICENSE
+│  main.go
+│      
+├─api
+│      Friends.go
+│      Groups.go
+│      Message.go
+│      User.go
+│      
+├─config
+│      config.go
+│      config.ini
+│      
+├─grpc
+│  │  rpcserver.go
+│  │  
+│  └─protofiles
+├─Message
+│      Message.go
+│      Type.go
+│      
+├─middleware
+│      JWT.go
+│      
+├─mongo
+│      Document.go
+│      mongo.go
+│      
+├─mysql
+│      Friend.go
+│      Group.go
+│      Message.go
+│      mysql.go
+│      User.go
+│      
+├─rabbitmq
+│      mq.go
+│      
+├─redis
+│      redis.go
+│      
+├─router
+│      Init.go
+│      
+├─service
+│      FriendService.go
+│      GroupServcie.go
+│      MessageService.go
+│      UserService.go
+│      
+├─test
+│      main.go
+│      
+├─utils
+│      errMsg.go
+│      
+└─webSocket
+        UserConn.go
+        webSocket.go
+        
+
+
