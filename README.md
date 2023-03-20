@@ -94,6 +94,9 @@ web框架：Gin
 └─webSocket
         UserConn.go
         webSocket.go
+
+#### 注意
+这里的mq消费我没有独立出去单独做一个程序，这里只是先进行测试，后续再做成一个独立的程序
    
 
 #### 想法与实现
